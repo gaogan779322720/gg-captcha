@@ -1,20 +1,20 @@
 # Captcha for Lumen
 
-基于  [Captcha for Laravel 5](https://github.com/mewebstudio/captcha "Captcha for Laravel 5") 修改而来的
+基于  youngyezi/captcha 修改而来的
 
 
 >A simple [Laravel 5](http://www.laravel.com/) service provider for including the [Captcha for Laravel 5](https://github.com/mewebstudio/captcha).
 
 ## 源于
 
-Captcha for Laravel 5 作者很久没有更新了，同时 Captcha 在 Lumen 有很多错误
+youngyezi/captcha 作者lumen6.0 不支持
 
-由此我基于原 Captcha 包进行了一些错误修复来集成 Lumen 。 同时删除了一些个人觉得太过冗余的东西，让使用更加方便和自由
+由此我弄了一下
 
 ## 安装
 
 
-	composer require youngyezi/captcha
+	composer require gogo/captcha
 
 ## 使用
 
@@ -27,11 +27,11 @@ Captcha for Laravel 5 作者很久没有更新了，同时 Captcha 在 Lumen 有
 
 ### 注册服务 `bootstrap\app.php`
 
-	$app->register(Youngyezi\Captcha\CaptchaServiceProvider::class);
+	$app->register(Gogo\Captcha\CaptchaServiceProvider::class);
 
 
   	// 添加别名
-	$app->alias('captcha', 'Youngyezi\Captcha\CaptchaServiceProvider');
+	$app->alias('captcha', 'Gogo\Captcha\CaptchaServiceProvider');
 	
 ### 配置文件
 
