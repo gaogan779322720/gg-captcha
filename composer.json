@@ -1,21 +1,39 @@
 {
   "name": "gogo/captcha",
   "description": "lumen",
-  "type": "library",
+  "type": "package",
   "license": "MIT",
-  "minimum-stability": "dev",
+  "authors": [
+    {
+      "name": "gogo",
+      "email": "779322720@qq.com.com",
+      "homepage": "https://github.com/mewebstudio",
+      "role": "Developer"
+    }
+  ],
   "require": {
-    "php": ">=7.2",
+    "php": "^7.2",
     "ext-gd": "*",
-    "illuminate/config": "~6.0",
-    "illuminate/filesystem": "~6.0",
-    "illuminate/support": "~6.0",
-    "illuminate/hashing": "~6.0",
-    "intervention/image": "^2.5"
+    "illuminate/config": "~5.0|^6.0|^7.0",
+    "illuminate/filesystem": "~5.0|^6.0|^7.0",
+    "illuminate/support": "~5.0|^6.0|^7.0",
+    "illuminate/hashing": "~5.0|^6.0|^7.0",
+    "intervention/image": "~2.5"
   },
   "autoload": {
     "psr-4": {
-      "Gogo\\captcha\\": "src/"
+      "Gogo\\Captcha\\": "src/"
+    }
+  },
+  "minimum-stability": "stable",
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Gogo\\Captcha\\CaptchaServiceProvider"
+      ],
+      "aliases": {
+        "Captcha": "Gogo\\Captcha\\Facades\\Captcha"
+      }
     }
   }
 }
