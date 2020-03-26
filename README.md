@@ -1,13 +1,13 @@
 # Captcha for Lumen
 
-基于  youngyezi/captcha 修改而来的
+基于  Gogo/captcha 修改而来的
 
 
 >A simple [Laravel 5](http://www.laravel.com/) service provider for including the [Captcha for Laravel 5](https://github.com/mewebstudio/captcha).
 
 ## 源于
 
-youngyezi/captcha 作者lumen6.0 不支持
+Youngyezi/captcha 作者lumen6.0 不支持
 
 由此我弄了一下
 

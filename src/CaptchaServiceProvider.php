@@ -1,11 +1,11 @@
 <?php
-namespace Youngyezi\Captcha;
+namespace Gogo\Captcha;
 
 
 use Illuminate\Support\ServiceProvider;
 /**
  * Class CaptchaServiceProvider
- * @package Youngyezi\Captcha
+ * @package Gogo\Captcha
  */
 class CaptchaServiceProvider extends ServiceProvider
 {

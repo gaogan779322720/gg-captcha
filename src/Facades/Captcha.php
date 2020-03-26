@@ -1,6 +1,6 @@
 <?php
 
-namespace Youngyezi\Captcha\Facades;
+namespace Gogo\Captcha\Facades;
 
 
 use Illuminate\Support\Facades\Facade;
